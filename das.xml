@@ -1,0 +1,13 @@
+<Libros>
+	<Libro>
+		<Titulo>a</Titulo>
+		<Autor>a</Autor>
+		<Categoria>a</Categoria>
+	</Libro>
+</Libros><Libros>
+	<Libro>
+		<Titulo>b</Titulo>
+		<Autor>b</Autor>
+		<Categoria>b</Categoria>
+	</Libro>
+</Libros>

@@ -1,5 +1,6 @@
 package crearficheroxml;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.util.Scanner;
 
@@ -23,8 +24,15 @@ public class CrearFicheroXML {
 
     public void FileWriterWrite(String nombreArchivo, String extension, String titulo, String autor, String categoria) {
         try {
-            //FileWriter crea el archivo
-            FileWriter fileWriter = new FileWriter(nombreArchivo + extension);
+
+            boolean existe = false;
+
+            File file = new File(nombreArchivo + extension);
+            if (file.exists()) {
+                existe = true;
+            }
+
+            FileWriter fileWriter = new FileWriter(file, existe);
             System.out.println(extension);
             //XML
             if (extension.equals(".xml")) {
